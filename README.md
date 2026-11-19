@@ -469,3 +469,5 @@ GitHub 웹페이지에서 `main.py`, `README.md`, `.gitignore`, `evidence/`와 �
 - [ ] 보너스 기능별 커밋과 `evidence/20~24-*.png` 캡처 확보
 
 > **주의:** 이 장은 보너스 5개를 모두 선택한 구현·검증 계획이다. 실제 완료 판정은 `main.py`, `state.json`, 실행 결과 및 Git 커밋으로 확인한다.
+
+Clone repository verification completed.
