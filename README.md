@@ -2,9 +2,8 @@
 
 > AI 올인원 과정 · Mission 2 수행 보고서  
 > **프로젝트:** Python 콘솔 퀴즈 게임  
-> **제출 저장소:** `https://github.com/<GitHub-사용자명>/<저장소명>` *(실제 주소로 교체)*  
-> **검증 상태:** 아래 실행 화면과 Git 증거는 `evidence/`에 실제 캡처 파일을 추가한 후 최종 확인한다.
-
+> **제출 저장소:** `https://github.com/ntiskang/mission2`   
+>
 ## 1. 프로젝트 개요
 
 Python 기본 문법과 객체지향 프로그래밍을 활용하여 터미널에서 실행되는 4지선다 퀴즈 게임을 개발한다. 사용자는 메뉴를 통해 퀴즈를 풀고, 문제를 추가하고, 목록과 최고 점수를 확인할 수 있다. `state.json`에 퀴즈와 최고 점수를 저장하여 프로그램을 종료한 뒤에도 데이터를 유지한다. Git으로 기능별 변경 이력을 관리하고 브랜치 생성·병합 및 GitHub Clone·Pull 과정을 검증한다.
@@ -47,8 +46,6 @@ git --version
 git config --global --list
 Get-Location
 ```
-
-> `python --version`이 버전 대신 `Python`만 출력된다면 `py --version` 또는 Python 실행 경로를 점검한다. Python 3.10 이상 설치 여부를 실제로 확인해야 한다. Git 설정 캡처에서는 이메일 주소 등 개인정보를 가린다.
 
 ![개발환경과 버전 확인](evidence/01-development-environment.png)
 
@@ -129,7 +126,7 @@ py main.py
 
 ### 6.2 기본 퀴즈 5개 이상
 
-Python 기본 개념을 다루는 4지선다 문제를 초기 데이터로 구성한다. 예를 들어 `int`, `list`, `dict`, 조건문, 클래스 관련 문제를 포함할 수 있다. **실제 제출 시 소스코드의 기본 문제 개수와 선택지·정답이 요구사항을 충족하는지 확인한다.**
+Python 기본 개념을 다루는 4지선다 문제를 초기 데이터로 구성한다. 예를 들어 `int`, `list`, `dict`, 조건문, 클래스 관련 문제를 포함할 수 있다. 
 
 ![기본 퀴즈 데이터](evidence/05-default-quizzes.png)
 
@@ -160,8 +157,6 @@ Python 기본 개념을 다루는 4지선다 문제를 초기 데이터로 구�
 
 게임 종료 시 현재 점수를 이전 최고 점수와 비교한다. 더 높은 점수라면 최고 기록을 갱신하고 `state.json`에 저장한다. 아직 기록이 없을 때는 기록 없음 메시지를 표시한다.
 
-> 최고 점수를 **정답 개수**로 저장하는지 **100점 환산 점수**로 저장하는지는 실제 코드에 맞춰 일관되게 표기한다. 문제 수가 달라지는 기능을 추가할 경우 비교 기준도 명확히 정한다.
-
 ![최고 점수 확인](evidence/09-best-score.png)
 
 ## 7. 입력 검증 및 예외 처리
@@ -181,7 +176,6 @@ Python 기본 개념을 다루는 4지선다 문제를 초기 데이터로 구�
 | T11 | JSON 읽기·쓰기 실패 | 예외 처리 및 사용자 안내 |
 | T12 | 퀴즈 목록이 비어 있음 | 풀이·목록에서 안내 표시 |
 
-**주의:** 위 표는 필수 테스트 명세다. 각 항목의 통과 여부는 실제 실행 후 판정하며, 미실행 항목을 통과로 기재하지 않는다.
 
 ![잘못된 입력 처리](evidence/10-invalid-input.png)
 
@@ -246,11 +240,9 @@ git status
 git add .gitignore README.md main.py
 git commit -m "Chore: Initialize Python quiz game repository"
 git branch -M main
-git remote add origin https://github.com/<GitHub-사용자명>/<저장소명>.git
+git remote add origin https://github.com/ntiskang/mission2.git
 git push -u origin main
 ```
-
-> 위 URL은 예시다. 이미 `origin`이 등록된 저장소에서는 `git remote add origin`을 다시 실행하지 말고 `git remote -v`로 확인한다. 첫 커밋 시점에 아직 존재하지 않는 파일은 `git add` 대상에서 제외한다.
 
 ### 9.2 기능 단위 커밋 계획
 
