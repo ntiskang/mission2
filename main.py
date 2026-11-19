@@ -82,14 +82,14 @@ class QuizGame:
             value = input(prompt).strip()
             if value or allow_empty:
                 return value
-            print("⚠️ 빈 입력은 허용되지 않습니다. 다시 입력하세요.")
+            print("⚠️ Null 입력은 허용되지 않습니다. 다시 입력하세요.")
 
     @staticmethod
     def read_number(prompt, minimum, maximum):
         while True:
             raw = input(prompt).strip()
             if not raw:
-                print("⚠️ 빈 입력입니다. 숫자를 입력하세요.")
+                print("⚠️ Null 입력입니다. 숫자를 입력하세요.")
                 continue
             try:
                 value = int(raw)
