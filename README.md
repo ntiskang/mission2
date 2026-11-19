@@ -298,8 +298,8 @@ git log --oneline --graph --decorate --all
 개발이 완료된 후 **기존 작업 디렉터리와 다른 폴더**에 복제한다.
 
 ```powershell
-cd C:\Users\강신철위원
-git clone https://github.com/<GitHub-사용자명>/<저장소명>.git quiz-game-clone
+cd C:\Users\user
+git clone https://github.com/ntiskang/mission2.git quiz-game-clone
 cd .\quiz-game-clone
 Add-Content README.md "`nClone repository verification completed."
 git add README.md
@@ -410,7 +410,7 @@ GitHub 웹페이지에서 `main.py`, `README.md`, `.gitignore`, `evidence/`와 �
 
 ## 13. 보너스 과제 — 5개 항목 모두 수행 대상으로 선정
 
-**선택 결과:** 제시된 보너스 과제 5개를 모두 구현·검증 대상으로 채택한다. 아래는 구현 기준과 검증 계획이다. 실제 코드 실행 및 증거 확보 전에는 완료로 표시하지 않는다.
+**선택 결과:** 제시된 보너스 과제 5개를 모두 구현·검증 대상으로 채택한다. 
 
 ### 13.1 랜덤 출제
 
@@ -469,5 +469,3 @@ GitHub 웹페이지에서 `main.py`, `README.md`, `.gitignore`, `evidence/`와 �
 - [ ] 보너스 기능별 커밋과 `evidence/20~24-*.png` 캡처 확보
 
 > **주의:** 이 장은 보너스 5개를 모두 선택한 구현·검증 계획이다. 실제 완료 판정은 `main.py`, `state.json`, 실행 결과 및 Git 커밋으로 확인한다.
-
-Clone repository verification completed.
