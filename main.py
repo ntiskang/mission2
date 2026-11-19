@@ -1,4 +1,4 @@
-"""Mission 2: Python 객체지향 콘솔 퀴즈 게임 (Python 3.10+)."""
+"""Mission 2: Python 객체지향 퀴즈 게임 (Python 3.15)."""
 
 import json
 import random
