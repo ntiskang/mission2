@@ -243,17 +243,13 @@ git status
 git add .gitignore README.md main.py
 git commit -m "Chore: Initialize Python quiz game repository"
 git branch -M main
-git remote add origin https://github.com/<GitHub-사용자명>/<저장소명>.git
+git remote add origin https://github.com/ntiskang/mission2.git
 git push -u origin main
 ```
 
-> 위 URL은 예시다. 이미 `origin`이 등록된 저장소에서는 `git remote add origin`을 다시 실행하지 말고 `git remote -v`로 확인한다. 첫 커밋 시점에 아직 존재하지 않는 파일은 `git add` 대상에서 제외한다.
-
 ### 9.2 기능 단위 커밋 계획
 
-아래는 **권장 커밋 이력 예시**이며 실제로 존재하는 커밋 목록이 아니다. 최종 제출에서는 `git log`로 확인한 실제 이력으로 검증한다.
-
-| 순서 | 권장 커밋 메시지 | 변경 내용 |
+| 순서 | 커밋 메시지 | 변경 내용 |
 |---|---|---|
 | 1 | `Chore: Initialize quiz game repository` | 저장소 초기화 |
 | 2 | `Feat: Add console menu and exit` | 메뉴·종료 |
